@@ -57,6 +57,97 @@ button{
 
   } */
 
+  .card-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 280px;
+    /* height: 95%; */
+    cursor: pointer;
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.img-box{
+    height: 100%;
+}
+
+.buy-btn-box{
+    width: 280px;
+    height: 280px;
+    /* background-color: black; */
+    background-color: #ff005d;
+    background-color: #241d62;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn-box:hover{
+    opacity: 75%;
+}
+
+.buy-btn{
+    /* font-family: 'Luckiest Guy', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    height: 80px;
+    width: 75%;
+    /* margin-top: 100px; */
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.com-img{
+    width: 100%;
+    z-index: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.item-desc{
+    /* border-style: solid; */
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(77, 77, 77); */
+    background-color: #241d62;
+    background-color: #ff005d;
+}
+
+.item-desc-title{
+    /* border-style: dotted; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -2px;
+    /* color: rgb(190, 11, 16); */
+    color: white;
+}
+
+
 
 
 .landing-section{
@@ -291,6 +382,7 @@ button{
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-bottom: 200px;
     /* background-color: #f1f1f1; */
     /* background-color: white; */
       /* border-style: solid;
