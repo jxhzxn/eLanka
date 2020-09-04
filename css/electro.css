@@ -118,11 +118,6 @@ button{
     cursor: pointer;
 }
 
-.pink{
-    color: #ff005d;
-    font-size: 140px;
-}
-
 .com-img{
     width: 100%;
     z-index: 0;
@@ -194,17 +189,32 @@ button{
     display: flex;
     position: absolute;
     justify-content: center;
-    margin-top: 100px;
+  
     padding-top: 10px;
     background-color: #ff005d;
-    padding-left: 200px;
+    /* padding-left: 200px; */
     /* line-height: 80px; */
      /* border-style: solid;
     border-color: white; */
 }
 
+.electro-svg{
+    width: 200px;
+    height: 200px;
+    margin-top: 180px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.electro-svg-1{
+    width: 200px;
+    height: 200px;
+    margin-left: 1200px;
+    margin-top: 50px;
+}
+
 .first-text{
-    font-size: 70px;
+    font-size: 120px;
     /* color: white; */
     color: #241d62;
     letter-spacing: 2px;
@@ -213,6 +223,11 @@ button{
     font-style: normal;
     font-weight: normal;
     text-align: center;
+}
+
+.pink{
+    color: #ff005d;
+    font-size: 140px;
 }
 
 .free{
