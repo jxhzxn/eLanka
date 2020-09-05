@@ -116,40 +116,55 @@
             </div>
 
             <div class="card">
+                <button onclick="test()" id="myBtn">
                 <div class="img-box">
+                    
                     <div class="buy-btn-box">
-                        <p class="buy-btn">USB C to C</p>
+                        <p class="buy-btn">Redmi Mi 10</p>
                     </div>
-                    <img class="com-img" src="./assets/images/typeC.jpeg" alt="pic">
+                        <img class="com-img" src="./assets/images/mi.png" alt="pic">
                 </div>
-                <div class="item-desc">
-                    <p class="item-desc-title">LKR 3000</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="img-box">
-                    <div class="buy-btn-box">
-                        <p class="buy-btn">Xiaomi Mi 10</p>
-                    </div>
-                    <img class="com-img" src="./assets/images/mi.png" alt="pic">
-                </div>
+            </button>
                 <div class="item-desc">
                     <p class="item-desc-title">LKR 90,000</p>
                 </div>
             </div>
 
             <div class="card">
+                <button onclick="test()" id="myBtn">
                 <div class="img-box">
+                    
                     <div class="buy-btn-box">
-                        <p class="buy-btn">One Plus 8 Pro</p>
+                        <p class="buy-btn">USB Type C to C</p>
                     </div>
-                    <img class="com-img" src="./assets/images/8proo.png" alt="pic">
+                        <img class="com-img" src="./assets/images/typeC.jpeg" alt="pic">
                 </div>
+            </button>
+                <div class="item-desc">
+                    <p class="item-desc-title">LKR 3000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <button onclick="test()" id="myBtn">
+                <div class="img-box">
+                    
+                    <div class="buy-btn-box">
+                        <p class="buy-btn">Oneplus 8 Pro</p>
+                    </div>
+                        <img class="com-img" src="./assets/images/8proo.png" alt="pic">
+                </div>
+            </button>
                 <div class="item-desc">
                     <p class="item-desc-title">LKR 120,000</p>
                 </div>
             </div>
+
+           
+
+            
+
+           
 
 
 
@@ -162,6 +177,28 @@
         <!-- Modal content -->
         <span class="close">&times;</span>
         <div class="modal-content">
+        <div class="img-container">
+            <div class="image-box">
+                <img class="modal-img" src="./assets/images/mi.png" alt="pic">
+            </div>
+        </div>
+        <div class="other-container">
+            <div class="top-container">
+                <p class="info-head">Redmi Mi 10</p>
+                <p class="info-price">LKR 90,000</p>
+            </div>
+
+            <div class="desc-container">
+                <p class="desc-text">Qualcomm® Kryo™ 585, 7 nm Process Technology
+                    CPU frequency: Octa-core processor, up to 2.84 GHz
+                    Qualcomm's trifecta design: 1 x 2.84GHz super large core + 3 x 2.42GHz large core + 4 x 1.80GHz small core
+                    GPU: Adreno™ 650 GPU, up to 587MHz
+                    AIE: 5th generation AIE processor</p>
+            </div>
+            <div class="modal-btn-container">
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
           <p id="text" class="invoice-text"></p>
         </div>
       
@@ -288,7 +325,7 @@
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
       modal.style.display = "block";
-        var output = "hiii";
+        // var output = "hiii";
         document.getElementById("text").innerHTML = output;
     }
     

@@ -50,12 +50,13 @@ button{
     /* padding: 20px; */
     margin-top: -80px;
     /* border: 5px solid rgb(255, 255, 255); */
-    border: 5px solid black;
+    border: 5px solid #241d62;
     width: 70%;
     height: 650px;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
   }
   
   /* The Close Button */
@@ -79,6 +80,95 @@ button{
     color: white;
     font-size: 50px;
   }
+
+.img-container{
+    width: 50%;
+    height: 100%;
+    /* border-color: #241d62; */
+    /* border-style: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-container{
+    width: 50%;
+    height: 100%;
+    /* border-color: #241d62; */
+    /* border-style: solid; */
+}
+
+.modal-img{
+    width: 450px;
+    margin-left: 100px;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-container{
+    padding: 100px;
+}
+
+.info-head{
+    font-size: 40px;
+    /* color: white; */
+    color: black;
+    letter-spacing: 2px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.info-price{
+    font-size: 30px;
+    /* color: white; */
+    color: black;
+    letter-spacing: 2px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Airbnb Cereal App Black';
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+}
+
+.desc-container{
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.desc-text{
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.modal-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cart-btn{
+    background-color: #ff005d;
+    border: none;
+    text-decoration: none;
+    width: 170px;
+    height: 60px;
+
+    font-family: 'Airbnb Cereal App Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: white;
+}
 
 
 
