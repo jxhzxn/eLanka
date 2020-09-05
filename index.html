@@ -101,12 +101,15 @@
         <div class="card-container">
 
             <div class="card">
+                <button onclick="test()" id="myBtn">
                 <div class="img-box">
+                    
                     <div class="buy-btn-box">
                         <p class="buy-btn">Redmi AirDots</p>
                     </div>
-                    <img class="com-img" src="./assets/images/test.jpg" alt="pic">
+                        <img class="com-img" src="./assets/images/test.jpg" alt="pic">
                 </div>
+            </button>
                 <div class="item-desc">
                     <p class="item-desc-title">LKR 4500</p>
                 </div>
@@ -151,6 +154,17 @@
 
 
         </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <p id="text" class="invoice-text"></p>
+        </div>
+      
     </div>
 
   
@@ -257,390 +271,40 @@
         
     </div>
 
-    <script>
-        AOS.init();
-      </script>
 
-
-
-    <script>
-       
-
-    </script>
-
-
-
-    <script>
-   var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-    </script>
-
-<!-- <script>
-
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-
-    var landing = $("#landing").height();
-    var about = $("#about").height() + landing;
-    var rules = $("#rules").height() + about;
-    var contact = $("#contact").height() + rules;
-    var faq = $("#faq").height() + contact;
-
-	  if (scroll > contact+1000) {
-	    $(".about").css("color" , "#8E8888");
-	    $(".timeline").css("color" , "#8E8888");
-	    $(".rules").css("color" , "#8E8888");
-	    $(".contact").css("color" , "#8E8888");
-        $(".faq").css("color" , "#8E8888");
-        console.log("fuckkkk");
-
-        $('.about').removeClass('animate__animated animate__headShake  nav-btn-active');
-        $('.timeline').removeClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.rules').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.contact').removeClass('animate__animated animate__headShake nav-btn-active');
-
-
-
-
-
-	  }else if (scroll > contact+370){
-		$(".about").css("color" , "#8E8888");
-	    $(".timeline").css("color" , "#8E8888");
-	    $(".rules").css("color" , "#8E8888");	
-	    $(".contact").css("color" , "#3E45EE"); 
-        $('.email-icon').addClass('animate__animated animate__bounceIn'); 
-
-        $('.contact').addClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.about').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.timeline').removeClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.rules').removeClass('animate__animated animate__headShake nav-btn-active');
-
-
-
-
-
-	  }else if (scroll > rules+210){
-		$(".about").css("color" , "#8E8888");
-	    $(".timeline").css("color" , "#8E8888");
-	    $(".rules").css("color" , "#3E45EE");
-        $(".contact").css("color" , "#8E8888"); 
-
-        $('.rules').addClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.about').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.timeline').removeClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.contact').removeClass('animate__animated animate__headShake nav-btn-active');
-
-
-	  }else if (scroll > about-180){
-		$(".about").css("color" , "#8E8888");
-	    $(".timeline").css("color" , "#3E45EE");
-	    $(".rules").css("color" , "#8E8888");
-	    $(".contact").css("color" , "#8E8888");
-
-        $('.timeline').addClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.about').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.rules').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.contact').removeClass('animate__animated animate__headShake nav-btn-active');
-
-
-	  }else if (scroll > landing-100){
-		$(".about").css("color" , "#3E45EE");
-	    $(".timeline").css("color" , "#8E8888");
-	    $(".rules").css("color" , "#8E8888");
-	    $(".contact").css("color" , "#8E8888");
-
-        $('.about').addClass('animate__animated animate__headShake nav-btn-active');
-        $('.timeline').removeClass('animate__animated animate__headShake nav-btn-active'); 
-        $('.rules').removeClass('animate__animated animate__headShake nav-btn-active');
-        $('.contact').removeClass('animate__animated animate__headShake nav-btn-active');
-
-
-
-
-
-
-
-	  }
-  });
-</script> -->
-
-<!-- <script>
-    var height = $("#landing-section").height();
-
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 866){
-            $('.top-banner').removeClass('top-banner-hidden');
-            $('.top-banner').addClass('fixed');
-        }else{
-            $('.top-banner').addClass('top-banner-hidden');
-        }
-    })
-</script> -->
-   
 <script>
-     anime({ 
-        targets: '#left-down',
-        keyframes: [
-            {translateX: 45, delay: 300},
-            {translateX: 91},
-            {translateX: 0, delay: 2000},
-            {translateX: 0, delay: 650},
-        ],
-        duration: 3000,
-        loop: true,
-        });
 
-        anime({ 
-        targets: '#center-down',
-        keyframes: [
-            {translateY: -50, delay: 300},
-            {translateX: -45},
-            {translateY: 0},
-            {translateX: 0},
-            {translateY: -50, delay: 300},
-            {translateY: -97.5, delay: 300},
-            {translateY: 0, delay: 2000},
-        ],
-        duration: 3000,
-        loop: true,
-        });
 
-        anime({ 
-        targets: '#right-down',
-        keyframes: [
-            {translateY: -50, delay: 600},
-            {translateX: -91, delay: 700},
-            {translateY: 0},
-            {translateY: -50, delay: 300},
-            {translateX: 0, delay: 300},
-            {translateY: 0, delay: 300},
-            {translateY: 0, delay: 700},
-        ],
-        duration: 3000,
-        loop: true,
-        });
-
-        anime({ 
-        targets: '.dot-sm',
-        keyframes: [
-            {translateY: 110, delay: 1000},
-            {translateY: 220, delay: 2000},
-            {translateY: 330, delay: 3000},
-            {translateY: 440, delay: 4000},
-            {translateY: 0, delay: 5000},
-        ],
-        duration: 6000,
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-1',
-        translateX: [
-            {value: -80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        translateY: [
-            {value: -80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-2',
-        translateX: [
-            {value: 80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        translateY: [
-            {value: -80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-3',
-        translateX: [
-            {value: -200, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-4',
-        translateX: [
-            {value: 200, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-5',
-        translateX: [
-            {value: -80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        translateY: [
-            {value: 80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#phone-6',
-        translateX: [
-            {value: 80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        translateY: [
-            {value: 80, duration: 1000, delay: 5000},
-            {value: 0, duration: 1000, delay: 500},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#heart1',
-        translateY: [
-            {value: -1000, duration: 1000, delay: 700},
-            {value: 0, duration: 1500, delay: 3000},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#heart2',
-        translateY: [
-            {value: -1400, duration: 1000, delay: 600},
-            {value: 0, duration: 1500, delay: 3100},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#heart3',
-        translateY: [
-            {value: -1700, duration: 1000, delay: 300},
-            {value: 0, duration: 1500, delay: 3400},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#facebook',
-        translateX: [
-            {value: 900, duration: 1000, delay: 1000},
-        ],
-        translateY: [
-            {value: -900, duration: 1000, delay: 1100},
-        ],
-        opacity: [
-            {value: 0, duration: 3000, delay: 5000},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#instagram',
-        translateX: [
-            {value: 1300, duration: 1000, delay: 2100},
-        ],
-        translateY: [
-            {value: -1100, duration: 1000, delay: 2200},
-        ],
-        opacity: [
-            {value: 0, duration: 3000, delay: 5000},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#email',
-        translateX: [
-            {value: 1250, duration: 1000, delay: 3200},
-        ],
-        translateY: [
-            {value: -600, duration: 1000, delay: 3300},
-        ],
-        opacity: [
-            {value: 0, duration: 3000, delay: 5000},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#left-eye',
-        translateX: [
-            {value: 20, duration: 1750, delay: 500},
-            {value: 0, duration: 1750, delay: 5000},
-        ],
-        translateY: [
-            {value: 05, duration: 1750, delay: 500},
-            {value: 0, duration: 1750, delay: 5000},
-        ],
-        loop: true,
-        });
-
-        anime({ 
-        targets: '#right-eye',
-        translateX: [
-            {value: 10, duration: 1750, delay: 500},
-            {value: 0, duration: 1750, delay: 5000},
-        ],
-        translateY: [
-            {value: 05, duration: 1750, delay: 500},
-            {value: 0, duration: 1750, delay: 5000},
-        ],
-        loop: true,
-        });
-
-       
-
+    function test(){
       
-</script>
+    }
+    
+    
 
-
-
-
-    <script>
-        var countDownDate = new Date("Jun 20, 2020 13:00:00").getTime();
-
-        var x = setInterval(function(){
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("day-count").innerHTML ="<span class='day-count'>"+days+"</span>";
-            document.getElementById("hours-count").innerHTML ="<span class='day-count'>"+hours+"</span>";
-            document.getElementById("minutes-count").innerHTML ="<span class='day-count'>"+minutes+"</span>";
-            document.getElementById("seconds-count").innerHTML ="<span class='day-count'>"+seconds+"</span>";
-
-            if (distance < 0) {
-             clearInterval(x);
-            document.getElementById("demo").innerHTML = "Registraion is closed :/";
-            }
-        },1000);
-    </script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+        var output = "hiii";
+        document.getElementById("text").innerHTML = output;
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    
+        </script>
     
 </body>
 </html>
